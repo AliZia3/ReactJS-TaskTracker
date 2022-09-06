@@ -1,38 +1,165 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  border: 0.2vh solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+h5 {
+  border: 2px solid black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-container {
+  max-height: 38vh;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #f4f4f4;
+  height: 7vh;
+  margin: 0.5vh;
+  padding: 1vh 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+.task.reminder {
+  border-left: 5px solid green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control input {
+  width: 100%;
+  height: 4vh;
+  margin: 0.5vh 0;
+  padding: 1vh;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 3vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-height: 100vh;
+    width: 98vw;
+    margin: 2vh auto;
+    padding: 2vh;
+    border-radius: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    margin-bottom: 2vh;
+  }
+
+  .task-container {
+    max-height: 38vh;
+    width: 100%;
+  }
+
+  .task {
+    height: 10vh;
+    margin: 1vh 0vh;
+    padding: 1vh 2vh;
+  }
+
+  .add-form {
+    margin-bottom: 4vh;
+  }
+
+  .form-control {
+    margin: 2vh 0;
+  }
+
+  .form-control input {
+    margin: 0.2vh 0vh;
+    padding: 2vh 1vh;
+  }
+
+  .form-control-check input {
+    flex: 2;
+    height: 20px;
+  }
+
+  footer {
+    margin-top: 30px;
+    text-align: center;
   }
 }
