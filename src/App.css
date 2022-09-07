@@ -13,7 +13,7 @@ body {
 .container {
   max-height: 90vh;
   max-width: 500px;
-  margin: 3vh auto;
+  margin: 2vh auto;
   overflow: auto;
   border: 0.2vh solid steelblue;
   padding: 30px;
@@ -66,6 +66,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   background: #e9e7e7;
+  height: 8vh;
   margin: 0.5vh;
   padding: 1vh 2vh;
 }
