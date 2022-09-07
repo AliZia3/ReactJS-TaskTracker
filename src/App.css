@@ -14,7 +14,7 @@ body {
   max-height: 90vh;
   max-width: 500px;
   margin: 2vh auto;
-  overflow: auto;
+  overflow: none;
   border: 0.2vh solid steelblue;
   padding: 30px;
   border-radius: 5px;
