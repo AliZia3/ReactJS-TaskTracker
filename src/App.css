@@ -65,11 +65,11 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   background: #e9e7e7;
   height: 8vh;
   margin: 0.5vh;
   padding: 1vh 2vh;
-  overflow-y: auto;
 }
 
 .task.reminder {
