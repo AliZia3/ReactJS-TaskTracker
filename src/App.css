@@ -138,6 +138,7 @@ footer {
   .task {
     margin: 1vh 0vh;
     padding: 1vh 2vh;
+    overflow-y: auto;
   }
 
   .add-form {
