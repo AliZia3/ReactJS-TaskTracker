@@ -82,19 +82,19 @@ h5 {
 }
 
 .add-form {
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 2vh 0;
 }
 
 .form-control input {
   width: 100%;
-  height: 4vh;
+  height: 5vh;
   margin: 0.5vh 0;
-  padding: 1vh;
-  font-size: 17px;
+  padding: 2vh 1vh;
+  font-size: 16px;
 }
 
 .form-control-check {
@@ -119,7 +119,7 @@ footer {
 
 @media screen and (max-width: 550px) {
   .container {
-    max-height: 100vh;
+    max-height: 99vh;
     width: 98vw;
     margin: 2vh auto;
     padding: 2vh;
@@ -144,13 +144,8 @@ footer {
     margin-bottom: 4vh;
   }
 
-  .form-control {
-    margin: 2vh 0;
-  }
-
   .form-control input {
-    margin: 0.2vh 0vh;
-    padding: 2vh 1vh;
+    border: 1.5px solid black;
   }
 
   .form-control-check input {
